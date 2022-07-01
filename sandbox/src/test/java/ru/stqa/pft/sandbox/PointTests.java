@@ -11,7 +11,7 @@ public class PointTests {
 
     @Test
     public void testDistance_1() {
-        Assert.assertEquals(a.distance(b),6.0);
+        Assert.assertEquals(a.distance(b),5.0);
     }
 
     @Test
