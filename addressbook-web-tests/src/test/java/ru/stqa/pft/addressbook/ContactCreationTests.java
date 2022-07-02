@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 public class ContactCreationTests {
     private WebDriver wd;
 
-    @BeforeClass(alwaysRun = true)
+    @BeforeMethod(alwaysRun = true)
     public void setUp() throws Exception {
         System.setProperty("webdriver.chrome.driver", "src/main/java/resources/chromedriver");
         wd = new ChromeDriver();
@@ -96,7 +96,7 @@ public class ContactCreationTests {
         wd.findElement(By.xpath("//input[@value='Login']")).click();
     }
 
-    @AfterClass(alwaysRun = true)
+    @AfterMethod(alwaysRun = true)
     public void tearDown() throws Exception {
         wd.quit();
     }
