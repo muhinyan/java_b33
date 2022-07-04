@@ -27,15 +27,8 @@ public class ApplicationManager {
     }
 
     public void stop() {
+        sessionHelper.logout();
         wd.quit();
-    }
-
-    public void clickEnter() {
-        wd.findElement(By.xpath("//div[@id='content']/form/input[21]")).click();
-    }
-
-    public void logout() {
-        wd.findElement(By.linkText("Logout")).click();
     }
 
     public GroupHelper getGroupHelper() {
@@ -46,7 +39,5 @@ public class ApplicationManager {
         return navigationHelper;
     }
 
-    public ContactHelper getContactHelper() {
-        return contactHelper;
-    }
+    public ContactHelper getContactHelper() { return contactHelper; }
 }

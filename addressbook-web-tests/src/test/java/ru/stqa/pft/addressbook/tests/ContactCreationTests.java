@@ -19,9 +19,8 @@ public class ContactCreationTests extends TestBase {
                         "7",
                         "November",
                         "1980"));
-        app.clickEnter();
+        app.getContactHelper().clickEnter();
         app.getNavigationHelper().gotoHomePage();
-        app.logout();
     }
 
 }

@@ -23,9 +23,7 @@ public class ContactData {
         this.byear = byear;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
+    public String getFirstName() { return firstName; }
 
     public String getLastName() {
         return lastName;
