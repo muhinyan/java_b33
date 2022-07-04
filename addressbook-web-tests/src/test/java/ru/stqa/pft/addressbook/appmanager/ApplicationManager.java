@@ -19,6 +19,7 @@ public class ApplicationManager {
         System.setProperty("webdriver.chrome.driver", "src/main/java/resources/chromedriver");
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        wd.get("http://localhost/addressbook/index.php");
         groupHelper = new GroupHelper(wd);
         contactHelper = new ContactHelper(wd);
         navigationHelper = new NavigationHelper(wd);
