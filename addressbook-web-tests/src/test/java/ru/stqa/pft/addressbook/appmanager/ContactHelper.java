@@ -28,8 +28,29 @@ public class ContactHelper extends BaseHelper {
         type(By.name("byear"), contactData.getByear());
     }
 
-    public void clickEnter() {
-        click(By.xpath("//div[@id='content']/form/input[21]"));
+    public void updateContact() {
+        click(By.name("update"));
+    }
+
+    public void submitContact() {
+        click(By.name("submit"));
+    }
+
+    public void selectContact() {
+        click(By.name("selected[]"));
+    }
+
+    public void deleteSelectedContacts() {
+        click(By.xpath("//input[@value='Delete']"));
+        acceptAlert();
+    }
+
+    public void editContact() {
+        click(By.xpath("//img[@alt='Edit']"));
+    }
+
+    public void returnHomePage() {
+        click(By.linkText("home page"));
     }
 
 }

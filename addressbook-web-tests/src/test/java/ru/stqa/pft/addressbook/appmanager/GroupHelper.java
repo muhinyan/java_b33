@@ -28,4 +28,19 @@ public class GroupHelper extends BaseHelper {
         type(By.name("group_footer"), groupData.getFooter());
     }
 
+    public void selectGroup() {
+        click(By.name("selected[]"));
+    }
+
+    public void deleteSelectedGroups() {
+        click(By.name("delete"));
+    }
+
+    public void initGroupModification() {
+        click(By.name("edit"));
+    }
+
+    public void submitGroupModification() {
+        click(By.name("update"));
+    }
 }

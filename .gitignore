@@ -16,3 +16,6 @@ gradle-app.setting
 /sandbox/build/test-results/test/binary/output.bin.idx
 /addressbook-web-tests/build/test-results/test/binary/output.bin.idx
 /sandbox/build/test-results/test/binary/output.bin
+/addressbook-web-tests/out/
+/sandbox/out/
+/sandbox/.gradle/

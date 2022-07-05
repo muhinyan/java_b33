@@ -28,6 +28,10 @@ public class BaseHelper {
         new Select(wd.findElement(locator)).selectByVisibleText(text);
     }
 
+    protected void acceptAlert() {
+        wd.switchTo().alert().accept();
+    }
+
     public boolean isElementPresent(By by) {
         try {
             wd.findElement(by);
