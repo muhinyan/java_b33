@@ -64,4 +64,16 @@ public class ContactHelper extends BaseHelper {
         click(By.linkText("home page"));
     }
 
+    public void CreateNewContact(ContactData contact, Boolean creation) {
+        addNewContact();
+        fillContactForm(
+                contact,
+                creation);
+        submitContact();
+        returnHomePage();
+    }
+
+    public boolean isThereAContact() {
+        return isElementPresent(By.name("selected[]"));
+    }
 }
