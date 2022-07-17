@@ -18,7 +18,9 @@ public class ContactCreationTests extends TestBase {
                         "alex@alxndex.ru",
                         "7",
                         "November",
-                        "1980"));
+                        "1980",
+                        "test1"),
+                true);
         app.getContactHelper().submitContact();
         app.getNavigationHelper().gotoHomePage();
     }

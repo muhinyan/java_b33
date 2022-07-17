@@ -19,7 +19,9 @@ public class ContactModificationTests extends TestBase {
                         "bob@bobndex.ru",
                         "1",
                         "November",
-                        "1950"));
+                        "1950",
+                        null),
+                false);
         app.getContactHelper().updateContact();
         app.getContactHelper().returnHomePage();
     }

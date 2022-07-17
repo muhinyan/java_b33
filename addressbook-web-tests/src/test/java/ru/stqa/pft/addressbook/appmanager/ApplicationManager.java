@@ -29,7 +29,7 @@ public class ApplicationManager {
             System.setProperty("webdriver.gecko.driver", "src/main/java/resources/geckodriver");
             wd = new FirefoxDriver();
         }
-        wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+//        wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         wd.get("http://localhost/addressbook/index.php");
         groupHelper = new GroupHelper(wd);
         contactHelper = new ContactHelper(wd);
