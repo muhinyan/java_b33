@@ -9,7 +9,7 @@ public class ContactModificationTests extends TestBase {
     public void testContactModification() throws Exception {
         app.getNavigationHelper().gotoHomePage();
         if (!app.getContactHelper().isThereAContact())
-            app.getContactHelper().CreateNewContact(
+            app.getContactHelper().createNewContact(
                     new ContactData(
                             "alex",
                             "pilipovich",
@@ -20,8 +20,7 @@ public class ContactModificationTests extends TestBase {
                             "7",
                             "November",
                             "1980",
-                            "test1"),
-                    true);
+                            "test1"));
         app.getContactHelper().editContact();
         app.getContactHelper().fillContactForm(
                 new ContactData(

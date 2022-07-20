@@ -7,7 +7,7 @@ public class ContactCreationTests extends TestBase {
 
     @Test
     public void testContactCreation() throws Exception {
-        app.getContactHelper().CreateNewContact(
+        app.getContactHelper().createNewContact(
                 new ContactData(
                         "alex",
                         "pilipovich",
@@ -18,8 +18,7 @@ public class ContactCreationTests extends TestBase {
                         "7",
                         "November",
                         "1980",
-                        "test1"),
-                true);
+                        "test6"));
         app.getNavigationHelper().gotoHomePage();
     }
 

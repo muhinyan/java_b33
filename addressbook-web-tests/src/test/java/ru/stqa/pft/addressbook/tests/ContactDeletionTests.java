@@ -9,7 +9,7 @@ public class ContactDeletionTests extends TestBase {
     public void testContactDeletion() throws Exception {
         app.getNavigationHelper().gotoHomePage();
         if (!app.getContactHelper().isThereAContact())
-            app.getContactHelper().CreateNewContact(
+            app.getContactHelper().createNewContact(
                     new ContactData(
                     "alex",
                     "pilipovich",
@@ -20,8 +20,7 @@ public class ContactDeletionTests extends TestBase {
                     "7",
                     "November",
                     "1980",
-                    "test1"),
-                    true);
+                    "test1"));
         app.getContactHelper().selectContact();
         app.getContactHelper().deleteSelectedContacts();
         app.getNavigationHelper().gotoHomePage();
