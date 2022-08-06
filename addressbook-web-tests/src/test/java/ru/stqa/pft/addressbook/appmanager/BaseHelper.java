@@ -29,8 +29,10 @@ public class BaseHelper {
     }
 
     protected void select(By locator, String text) {
-        click(locator);
-        new Select(wd.findElement(locator)).selectByVisibleText(text);
+        if (text != null) {
+            click(locator);
+            new Select(wd.findElement(locator)).selectByVisibleText(text);
+        }
     }
 
     protected void acceptAlert() {

@@ -38,9 +38,9 @@ public class ContactData {
         this.workTelephone = null;
         this.mobileTelephone = null;
         this.email = null;
-        this.bday = "7";
-        this.bmonth = "November";
-        this.byear = "1980";
+        this.bday = null;
+        this.bmonth = null;
+        this.byear = null;
         this.group = null;
     }
 
