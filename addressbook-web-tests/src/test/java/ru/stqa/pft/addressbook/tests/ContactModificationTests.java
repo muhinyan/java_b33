@@ -11,7 +11,7 @@ public class ContactModificationTests extends TestBase {
 
     @Test
     public void testContactModification() throws Exception {
-        app.getNavigationHelper().gotoHomePage();
+        app.goTo().gotoHomePage();
         if (!app.getContactHelper().isThereAContact())
             app.getContactHelper().createNewContact(
                     new ContactData(
