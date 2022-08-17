@@ -118,6 +118,7 @@ public class ContactHelper extends BaseHelper {
         String firstname = wd.findElement(By.name("firstname")).getAttribute("value");
         String lastname = wd.findElement(By.name("lastname")).getAttribute("value");
         String address = wd.findElement(By.name("address")).getAttribute("value");
+        String home = wd.findElement(By.name("home")).getAttribute("value");
         String mobile = wd.findElement(By.name("mobile")).getAttribute("value");
         String work = wd.findElement(By.name("work")).getAttribute("value");
         String email = wd.findElement(By.name("email")).getAttribute("value");
@@ -125,7 +126,8 @@ public class ContactHelper extends BaseHelper {
         String email3 = wd.findElement(By.name("email3")).getAttribute("value");
         wd.navigate().back();
         return new ContactData().withId(contact.getId()).withFirstName(firstname).withLastName(lastname).withAddress(address)
-                .withMobileTelephone(mobile).withWorkTelephone(work).withEmail(email).withEmail2(email2).withEmail3(email3);
+                .withHomeTelephone(home).withMobileTelephone(mobile).withWorkTelephone(work)
+                .withEmail(email).withEmail2(email2).withEmail3(email3);
 
     }
 }
