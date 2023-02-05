@@ -1,0 +1,62 @@
+[
+  {
+    "firstName": "alex",
+    "lastName": "yyy",
+    "address": "moscow 0",
+    "workTelephone": "88005553535",
+    "mobileTelephone": "+79087776565",
+    "email": "alex0@alxndex.ru",
+    "bday": "7",
+    "bmonth": "November",
+    "byear": "1980",
+    "group": "test0"
+  },
+  {
+    "firstName": "alex",
+    "lastName": "yyy",
+    "address": "moscow 1",
+    "workTelephone": "88005553535",
+    "mobileTelephone": "+79087776565",
+    "email": "alex1@alxndex.ru",
+    "bday": "7",
+    "bmonth": "November",
+    "byear": "1980",
+    "group": "test1"
+  },
+  {
+    "firstName": "alex",
+    "lastName": "yyy",
+    "address": "moscow 2",
+    "workTelephone": "88005553535",
+    "mobileTelephone": "+79087776565",
+    "email": "alex2@alxndex.ru",
+    "bday": "7",
+    "bmonth": "November",
+    "byear": "1980",
+    "group": "test2"
+  },
+  {
+    "firstName": "alex",
+    "lastName": "yyy",
+    "address": "moscow 3",
+    "workTelephone": "88005553535",
+    "mobileTelephone": "+79087776565",
+    "email": "alex3@alxndex.ru",
+    "bday": "7",
+    "bmonth": "November",
+    "byear": "1980",
+    "group": "test3"
+  },
+  {
+    "firstName": "alex",
+    "lastName": "yyy",
+    "address": "moscow 4",
+    "workTelephone": "88005553535",
+    "mobileTelephone": "+79087776565",
+    "email": "alex4@alxndex.ru",
+    "bday": "7",
+    "bmonth": "November",
+    "byear": "1980",
+    "group": "test4"
+  }
+]
