@@ -15,12 +15,15 @@ public class ApplicationManager {
     private SessionHelper sessionHelper;
     private ContactHelper contactHelper;
     private  String browser;
+    private DbHelper dbHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
     }
 
     public void init() {
+
+        dbHelper = new DbHelper();
         if (browser.equals(BrowserType.CHROME)) {
             System.setProperty("webdriver.chrome.driver", "src/main/java/resources/chromedriver");
             wd = new ChromeDriver();
@@ -51,4 +54,7 @@ public class ApplicationManager {
     }
 
     public ContactHelper contact() { return contactHelper; }
+    public DbHelper db () {
+        return dbHelper;
+    }
 }

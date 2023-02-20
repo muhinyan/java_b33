@@ -3,40 +3,59 @@ package ru.stqa.pft.addressbook.model;
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import org.hibernate.annotations.Type;
 
 import java.io.File;
 import java.util.Objects;
 
 @XStreamAlias("contact")
+@Entity
+@Table(name = "addressbook")
 public class ContactData {
     @XStreamOmitField
+    @Id
+    @Column(name = "id")
     private int id = Integer.MAX_VALUE;
     @Expose
+    @Column(name = "firstname")
     private String firstName;
     @Expose
+    @Column(name = "lastname")
     private String lastName;
     @Expose
+    @Column(name = "address")
     private String address;
-    private String homeTelephone;
+    transient private String homeTelephone;
     @Expose
+    @Column(name = "work")
     private String workTelephone;
     @Expose
+    @Column(name = "mobile")
     private String mobileTelephone;
-    private String allPhones;
+    transient private String allPhones;
     @Expose
+    @Column(name = "email")
     private String email;
-    private String email2;
-    private String email3;
-    private String allEmails;
+    transient private String email2;
+    transient private String email3;
+
+    transient private String allEmails;
     @Expose
-    private String bday;
+    @Column(name = "bday")
+    transient private String bday;
     @Expose
-    private String bmonth;
+    @Column(name = "bmonth")
+    transient private String bmonth;
     @Expose
-    private String byear;
+    @Column(name = "byear")
+    transient private String byear;
     @Expose
-    private String group;
-    private File photo;
+    transient private String group;
+    transient private File photo;
 
 
 
